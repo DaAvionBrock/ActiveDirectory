@@ -35,7 +35,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set up the Azure environment:
+   - Sign in to the Azure portal at portal.azure.com.
+   - Create a new resource group for your virtual network and virtual machines.
+   - Create a new virtual network and subnet to host your virtual machines.
 </p>
 <br />
 
@@ -43,7 +46,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Create the Active Directory domain controller virtual machine:
+   - Select "Create a resource" from the Azure portal's left-hand menu.
+   - Search for "Windows Server" and choose the appropriate version.
+   - Configure the virtual machine settings, such as name, resource group, size, and region.
+   - Specify the virtual network and subnet you created in step 1.
+   - Choose a username and password for the domain controller's administrator account.
+   - Configure additional settings like disk type, networking, and management options.
+   - Review and create the virtual machine.
 </p>
 <br />
 
@@ -51,7 +61,61 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Connect to the domain controller virtual machine:
+   - Once the virtual machine is created, select it from the Azure portal.
+   - Click on "Connect" to download the RDP file.
+   - Use the RDP file to connect to the virtual machine using a remote desktop client.
 </p>
 <br />
 
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Configure the domain controller:
+   - On the domain controller virtual machine, open the Server Manager.
+   - Select "Add roles and features" and proceed through the wizard.
+   - Choose the "Active Directory Domain Services" role and install it.
+   - After installation, promote the server to a domain controller.
+   - Specify the desired Active Directory domain name and set the domain controller options.
+   - Set the Directory Services Restore Mode (DSRM) password.
+   - Complete the wizard and let the server restart.
+</p>
+<br />
+
+>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Configure DNS:
+   - Once the domain controller is promoted, open the Server Manager.
+   - Select "Tools" and then open "DNS Manager".
+   - Configure the DNS server by creating the appropriate forward and reverse lookup zones for your domain.
+   - Verify that the DNS server is functioning correctly.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Join additional virtual machines to the domain:
+   - Create additional virtual machines that will be part of the Active Directory domain.
+   - Connect to each virtual machine using RDP.
+   - Open the System properties, go to the "Computer Name" tab, and click on "Change".
+   - Select "Domain" and enter the Active Directory domain name configured in step 4.
+   - Provide the credentials of an account with sufficient permissions to join the domain.
+   - Restart the virtual machine after joining the domain.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+7. Test the Active Directory environment:
+   - Log in to the domain-joined virtual machines using domain user accounts.
+   - Verify that the domain users can authenticate successfully.
+   - Test Active Directory services like Group Policy, user authentication, and directory access.
+</p>
+<br />
