@@ -50,14 +50,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Create the Active Directory domain controller virtual machine:
-   - Select "Create a resource" from the Azure portal's left-hand menu.
-   - Search for "Windows Server" and choose the appropriate version.
-   - Configure the virtual machine settings, such as name, resource group, size, and region.
-   - Specify the virtual network and subnet you created in step 1.
-   - Choose a username and password for the domain controller's administrator account.
-   - Configure additional settings like disk type, networking, and management options.
-   - Review and create the virtual machine.
+<div>
+  <h3>Create the Active Directory domain controller virtual machine:</h3>
+  <ol>
+    <li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
+    <li>Search for "Windows Server" and choose the appropriate version.</li>
+    <li>Configure the virtual machine settings, such as name, resource group, size, and region.</li>
+    <li>Specify the virtual network and subnet you created in step 1.</li>
+    <li>Choose a username and password for the domain controller's administrator account.</li>
+    <li>Configure additional settings like disk type, networking, and management options.</li>
+    <li>Review and create the virtual machine.</li>
+  </ol>
+</div>
 </p>
 <br />
 
@@ -65,10 +69,14 @@ Create the Active Directory domain controller virtual machine:
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Connect to the domain controller virtual machine:
-   - Once the virtual machine is created, select it from the Azure portal.
-   - Click on "Connect" to download the RDP file.
-   - Use the RDP file to connect to the virtual machine using a remote desktop client.
+<div>
+  <h3>Connect to the domain controller virtual machine:</h3>
+  <ol>
+    <li>Once the virtual machine is created, select it from the Azure portal.</li>
+    <li>Click on "Connect" to download the RDP file.</li>
+    <li>Use the RDP file to connect to the virtual machine using a remote desktop client.</li>
+  </ol>
+</div>
 </p>
 <br />
 
@@ -76,14 +84,18 @@ Connect to the domain controller virtual machine:
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Configure the domain controller:
-   - On the domain controller virtual machine, open the Server Manager.
-   - Select "Add roles and features" and proceed through the wizard.
-   - Choose the "Active Directory Domain Services" role and install it.
-   - After installation, promote the server to a domain controller.
-   - Specify the desired Active Directory domain name and set the domain controller options.
-   - Set the Directory Services Restore Mode (DSRM) password.
-   - Complete the wizard and let the server restart.
+<div>
+  <h3>Configure the domain controller:</h3>
+  <ol>
+    <li>On the domain controller virtual machine, open the Server Manager.</li>
+    <li>Select "Add roles and features" and proceed through the wizard.</li>
+    <li>Choose the "Active Directory Domain Services" role and install it.</li>
+    <li>After installation, promote the server to a domain controller.</li>
+    <li>Specify the desired Active Directory domain name and set the domain controller options.</li>
+    <li>Set the Directory Services Restore Mode (DSRM) password.</li>
+    <li>Complete the wizard and let the server restart.</li>
+  </ol>
+</div>
 </p>
 <br />
 
@@ -91,11 +103,15 @@ Configure the domain controller:
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Configure DNS:
-   - Once the domain controller is promoted, open the Server Manager.
-   - Select "Tools" and then open "DNS Manager".
-   - Configure the DNS server by creating the appropriate forward and reverse lookup zones for your domain.
-   - Verify that the DNS server is functioning correctly.
+<div>
+  <h3>Configure DNS:</h3>
+  <ol>
+    <li>Once the domain controller is promoted, open the Server Manager.</li>
+    <li>Select "Tools" and then open "DNS Manager".</li>
+    <li>Configure the DNS server by creating the appropriate forward and reverse lookup zones for your domain.</li>
+    <li>Verify that the DNS server is functioning correctly.</li>
+  </ol>
+</div>
 </p>
 <br />
 
@@ -103,13 +119,17 @@ Configure DNS:
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Join additional virtual machines to the domain:
-   - Create additional virtual machines that will be part of the Active Directory domain.
-   - Connect to each virtual machine using RDP.
-   - Open the System properties, go to the "Computer Name" tab, and click on "Change".
-   - Select "Domain" and enter the Active Directory domain name configured in step 4.
-   - Provide the credentials of an account with sufficient permissions to join the domain.
-   - Restart the virtual machine after joining the domain.
+<div>
+  <h3>Join additional virtual machines to the domain:</h3>
+  <ol>
+    <li>Create additional virtual machines that will be part of the Active Directory domain.</li>
+    <li>Connect to each virtual machine using RDP.</li>
+    <li>Open the System properties, go to the "Computer Name" tab, and click on "Change".</li>
+    <li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
+    <li>Provide the credentials of an account with sufficient permissions to join the domain.</li>
+    <li>Restart the virtual machine after joining the domain.</li>
+  </ol>
+</div>
 </p>
 <br />
 
@@ -117,9 +137,13 @@ Join additional virtual machines to the domain:
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-7. Test the Active Directory environment:
-   - Log in to the domain-joined virtual machines using domain user accounts.
-   - Verify that the domain users can authenticate successfully.
-   - Test Active Directory services like Group Policy, user authentication, and directory access.
+<div>
+  <h3>Test the Active Directory environment:</h3>
+  <ol>
+    <li>Log in to the domain-joined virtual machines using domain user accounts.</li>
+    <li>Verify that the domain users can authenticate successfully.</li>
+    <li>Test Active Directory services like Group Policy, user authentication, and directory access.</li>
+  </ol>
+</div>
 </p>
 <br />
