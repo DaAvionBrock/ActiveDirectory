@@ -35,10 +35,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Set up the Azure environment:
-   - Sign in to the Azure portal at portal.azure.com.
-   - Create a new resource group for your virtual network and virtual machines.
-   - Create a new virtual network and subnet to host your virtual machines.
+<div>
+  <h3>Set up the Azure environment:</h3>
+  <ol>
+    <li>Sign in to the Azure portal at <a href="https://portal.azure.com">portal.azure.com</a>.</li>
+    <li>Create a new resource group for your virtual network and virtual machines.</li>
+    <li>Create a new virtual network and subnet to host your virtual machines.</li>
+  </ol>
+</div>
 </p>
 <br />
 
