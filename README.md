@@ -105,14 +105,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <div>
   <h3>Create an Admin & Normal User Account in AD: <h3/>
-  <ol>
+<ol>
   <li>In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called "_EMPLOYEES"</li>
   <li>Create a new OU named "_ADMINS"</li>
   <li>Create a new employee named "Jane Doe" (same password) with the username of "jane_admin"</li>
   <li>Add jane_admin to the "Domain Admins" Security Group</li>
   <li>Log out/close the Remote Desktop connection to DC-1 and log back in as "mydomain.com\jane_admin"</li>
   <li>Use jane_admin as your admin account from now on</li>
-  </ol>
+</ol>
 </div>
 </p>
 <br />
