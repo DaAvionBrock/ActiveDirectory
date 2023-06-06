@@ -104,15 +104,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Create an Admin & Normal User Account in AD: <h3/>
+  <h3>Join Client-1 to your domain (mydomain.com)<h3/>
 <ol>
-  <li>In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called "_EMPLOYEES"</li>
-  <li>Create a new OU named "_ADMINS"</li>
-  <li>Create a new employee named "Jane Doe" (same password) with the username of "jane_admin"</li>
-  <li>Add jane_admin to the "Domain Admins" Security Group</li>
-  <li>Log out/close the Remote Desktop connection to DC-1 and log back in as "mydomain.com\jane_admin"</li>
-  <li>Use jane_admin as your admin account from now on</li>
+  <li>From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address</li>
+  <li>From the Azure Portal, restart Client-1</li>
+  <li>Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)</li>
+  <li>Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the "Computers" container on the root of the domain</li>
 </ol>
+
 </div>
 </p>
 <br />
