@@ -76,6 +76,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </div>
 </p>
 <br />
+
 ![Screenshot (86)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/405d6538-58eb-48a1-a8ad-d52f0da58eae)
 ![Screenshot (87)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/fda28150-b786-4723-98db-8011e5f587d8)
 ![Screenshot (88)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3fc9b988-a4bc-4ad4-8333-163346c1019d)
