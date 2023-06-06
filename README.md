@@ -15,19 +15,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
-- PowerShell
 
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Table of Contents</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1: Setup the Azure Enviorment
+- Step 2: Create the Active Directory domain controller VM
+- Step 3: Connect to the domain controller virtual machine
+- Step 4: configure the domain controller
+- Step 5: Join Windows 10 to your domain
+- Step 6: Join additional VMs to your domain
+- Step 7: Test the Active Directory enviorment
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -36,7 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Set up the Azure environment:</h3>
+  <h3>Step 1: Set up the Azure environment:</h3>
   <ol>
     <li>Sign in to the Azure portal at <a href="https://portal.azure.com">portal.azure.com</a>.</li>
     <li>Create a new resource group for your virtual network and virtual machines.</li>
@@ -51,7 +53,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Create the Active Directory domain controller virtual machine:</h3>
+  <h3>Step 2: Create the Active Directory domain controller virtual machine:</h3>
   <ol>
     <li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
     <li>Search for "Windows Server" and choose the appropriate version.</li>
@@ -70,7 +72,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Connect to the domain controller virtual machine:</h3>
+  <h3>Step 3: Connect to the domain controller virtual machine:</h3>
   <ol>
     <li>Once the virtual machine is created, select it from the Azure portal.</li>
     <li>Click on "Connect" to download the RDP file.</li>
@@ -85,7 +87,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Configure the domain controller:</h3>
+  <h3>Step 4: Configure the domain controller:</h3>
   <ol>
     <li>On the domain controller virtual machine, open the Server Manager.</li>
     <li>Select "Add roles and features" and proceed through the wizard.</li>
@@ -104,7 +106,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Join Windows 10 to your domain (mydomain.com)<h3/>
+  <h3>Step 5: Join Windows 10 to your domain (mydomain.com)<h3/>
   <ol>
     <li>From the Azure Portal, set Windows10’s DNS settings to the DC’s Private IP address</li>
     <li>From the Azure Portal, restart windows 10 VM</li>
@@ -121,7 +123,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Join additional virtual machines to the domain:</h3>
+  <h3>Step 6: Join additional virtual machines to the domain:</h3>
   <ol>
     <li>Create additional virtual machines that will be part of the Active Directory domain.</li>
     <li>Connect to each virtual machine using RDP.</li>
@@ -139,7 +141,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
 <div>
-  <h3>Test the Active Directory environment:</h3>
+  <h3>Step 7: Test the Active Directory environment:</h3>
   <ol>
     <li>Log in to the domain-joined virtual machines using domain user accounts.</li>
     <li>Verify that the domain users can authenticate successfully.</li>
