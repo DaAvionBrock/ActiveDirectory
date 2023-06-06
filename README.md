@@ -75,9 +75,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <h3>Step 3: Connect to the domain controller virtual machine:</h3>
   <ol>
     <li>Once the virtual machine is created, select it from the Azure portal.</li>
-    <li>Click on "Connect" to download the RDP file.</li>
-    <li>Use the RDP file to connect to the virtual machine using a remote desktop client.</li>
-  </ol>
+    <li>Copy the public ip address to paste in remote desktop client.</li>
+    <li>Login with the credentials you created in step 2.</li>
 </div>
 </p>
 <br />
