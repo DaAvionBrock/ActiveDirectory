@@ -28,7 +28,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-Screenshot (75).png
+![Screenshot (75)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/2144731a-b67a-46bd-aa41-21aef3e2d15d)
+
 <p>
 <div>
   <h3>Step 1: Set up the Azure environment:</h3>
