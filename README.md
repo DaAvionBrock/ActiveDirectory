@@ -29,7 +29,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="Screenshot(75).png" alt="C:\Users\trinp\OneDrive\Pictures\Screenshots"/>
+<img Screenshot (75).png/>
 </p>
 <p>
 <div>
