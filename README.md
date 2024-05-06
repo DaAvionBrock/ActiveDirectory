@@ -41,7 +41,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 
-
+<h3>Step 2: Create the Active Directory domain controller virtual machine:</h3>
 ![Screenshot (77)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/d6562cf9-527d-4f2f-ad50-1b40b9bd4792)
 ![Screenshot (78)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/01eb921b-8ce7-474e-a1f6-6ea2af8e908c)
 ![Screenshot (79)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/b988a1b0-3598-4fb6-bdfc-f490fc361102)
