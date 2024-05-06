@@ -69,19 +69,39 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![Screenshot (83)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/1249b639-600c-482e-9ef1-6570b9deefa9)
 
-    <li>Copy the public ip address to paste in remote desktop client.</li>
-    <li>Login with the credentials you created in step 2.</li>
+<li>Copy the public ip address to paste in remote desktop client.</li>
+    
+<li>Login with the credentials you created in step 2.</li>
     
 ![Screenshot (84)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/b01a5495-5d99-441f-b672-ab3f4d481a19)
 
   
 <h3>Step 4: Configure the domain controller:</h3>
 
+<li>On the domain controller virtual machine, open the Server Manager.</li>
+
+<li>Select "Add roles and features" and proceed through the wizard.</li>
+ 
 ![Screenshot (86)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/405d6538-58eb-48a1-a8ad-d52f0da58eae)
+
+<li>Choose the "Active Directory Domain Services" role and install it.</li>
+
 ![Screenshot (87)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/fda28150-b786-4723-98db-8011e5f587d8)
+
+<li>After installation, promote the server to a domain controller.</li>
+
 ![Screenshot (88)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3fc9b988-a4bc-4ad4-8333-163346c1019d)
+
+<li>Specify the desired Active Directory domain name and set the domain controller options.</li>
+
 ![Screenshot (89)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/0aae2f2e-6dab-42b5-a33b-1367c47ccbaa)
+
+<li>Set the Directory Services Restore Mode (DSRM) password.</li>
+
 ![Screenshot (90)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/e934ded3-499e-4204-aa05-f64bc6f171db)
+
+<li>Complete the wizard and let the server restart.</li>
+
 ![Screenshot (91)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/f88dac86-a493-4337-add0-0cd312eb1d15)
 
 
