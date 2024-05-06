@@ -79,47 +79,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Step 4: Configure the domain controller:</h3>
 
 <li>On the domain controller virtual machine, open the Server Manager.</li>
-
 <li>Select "Add roles and features" and proceed through the wizard.</li>
- 
+
 ![Screenshot (86)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/405d6538-58eb-48a1-a8ad-d52f0da58eae)
 
 <li>Choose the "Active Directory Domain Services" role and install it.</li>
 
 ![Screenshot (87)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/fda28150-b786-4723-98db-8011e5f587d8)
-
-<li>After installation, promote the server to a domain controller.</li>
-
 ![Screenshot (88)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3fc9b988-a4bc-4ad4-8333-163346c1019d)
 
+<li>After installation, promote the server to a domain controller.</li>
 <li>Specify the desired Active Directory domain name and set the domain controller options.</li>
 
 ![Screenshot (89)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/0aae2f2e-6dab-42b5-a33b-1367c47ccbaa)
 
-<li>Set the Directory Services Restore Mode (DSRM) password.</li>
-
+<li>Specify the desired Active Directory domain name and set the domain controller options.</li>
+    
 ![Screenshot (90)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/e934ded3-499e-4204-aa05-f64bc6f171db)
 
+<li>Set the Directory Services Restore Mode (DSRM) password.</li>
 <li>Complete the wizard and let the server restart.</li>
 
 ![Screenshot (91)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/f88dac86-a493-4337-add0-0cd312eb1d15)
 
-
-<p>
-<div>
-  <h3>Step 4: Configure the domain controller:</h3>
-  <ol>
-    <li>On the domain controller virtual machine, open the Server Manager.</li>
-    <li>Select "Add roles and features" and proceed through the wizard.</li>
-    <li>Choose the "Active Directory Domain Services" role and install it.</li>
-    <li>After installation, promote the server to a domain controller.</li>
-    <li>Specify the desired Active Directory domain name and set the domain controller options.</li>
-    <li>Set the Directory Services Restore Mode (DSRM) password.</li>
-    <li>Complete the wizard and let the server restart.</li>
-  </ol>
-</div>
-</p>
-<br />
 
 ![Screenshot (103)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/119964b1-15fe-4e61-b3ab-02353732b305)
 ![Screenshot (99)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/163ceda3-9a6f-40cf-8e42-7c1bc762803b)
