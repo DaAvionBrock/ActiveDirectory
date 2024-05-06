@@ -44,13 +44,26 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Step 2: Create the Active Directory domain controller virtual machine:</h3>
 
 ![Screenshot (77)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/d6562cf9-527d-4f2f-ad50-1b40b9bd4792)
+
+<li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
+
 ![Screenshot (78)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/01eb921b-8ce7-474e-a1f6-6ea2af8e908c)
+
+ <li>Search for "Windows Server" and choose the appropriate version.</li>
+ 
 ![Screenshot (79)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/b988a1b0-3598-4fb6-bdfc-f490fc361102)
+
+<li>Configure the virtual machine settings, such as name, resource group, size, and region.</li>
+    <li>Specify the virtual network and subnet you created in step 1.</li>
+    
 ![Screenshot (82)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3cdc39d4-8fa1-4746-ae64-6c5af809e0f6)
+
+<li>Choose a username and password for the domain controller's administrator account.</li>
+    <li>Configure additional settings like disk type, networking, and management options.</li>
+    <li>Review and create the virtual machine.</li>
 
 <p>
 <div>
-  <h3>Step 2: Create the Active Directory domain controller virtual machine:</h3>
   <ol>
     <li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
     <li>Search for "Windows Server" and choose the appropriate version.</li>
