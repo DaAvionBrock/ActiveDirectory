@@ -43,53 +43,39 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 2: Create the Active Directory domain controller virtual machine:</h3>
 
+<li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
+
 ![Screenshot (77)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/d6562cf9-527d-4f2f-ad50-1b40b9bd4792)
 
-<li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
+<li>Search for "Windows Server" and choose the appropriate version.</li>
 
 ![Screenshot (78)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/01eb921b-8ce7-474e-a1f6-6ea2af8e908c)
 
- <li>Search for "Windows Server" and choose the appropriate version.</li>
+<li>Configure the virtual machine settings, such as name, resource group, size, and region.</li>
+<li>Specify the virtual network and subnet you created in step 1.</li>
  
 ![Screenshot (79)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/b988a1b0-3598-4fb6-bdfc-f490fc361102)
-
-<li>Configure the virtual machine settings, such as name, resource group, size, and region.</li>
-    <li>Specify the virtual network and subnet you created in step 1.</li>
-    
-![Screenshot (82)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3cdc39d4-8fa1-4746-ae64-6c5af809e0f6)
 
 <li>Choose a username and password for the domain controller's administrator account.</li>
     <li>Configure additional settings like disk type, networking, and management options.</li>
     <li>Review and create the virtual machine.</li>
+    
+![Screenshot (82)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3cdc39d4-8fa1-4746-ae64-6c5af809e0f6)
 
-<p>
-<div>
-  <ol>
-    <li>Select "Create a resource" from the Azure portal's left-hand menu.</li>
-    <li>Search for "Windows Server" and choose the appropriate version.</li>
-    <li>Configure the virtual machine settings, such as name, resource group, size, and region.</li>
-    <li>Specify the virtual network and subnet you created in step 1.</li>
-    <li>Choose a username and password for the domain controller's administrator account.</li>
-    <li>Configure additional settings like disk type, networking, and management options.</li>
-    <li>Review and create the virtual machine.</li>
-  </ol>
-</div>
-</p>
-<br />
+
+<h3>Step 3: Connect to the domain controller virtual machine:</h3>
+
+<li>Once the virtual machine is created, search Virtual Machines & select the VM created in Azure portal.</li>
 
 ![Screenshot (83)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/1249b639-600c-482e-9ef1-6570b9deefa9)
-![Screenshot (84)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/b01a5495-5d99-441f-b672-ab3f4d481a19)
 
-<p>
-<div>
-  <h3>Step 3: Connect to the domain controller virtual machine:</h3>
-  <ol>
-    <li>Once the virtual machine is created, search Virtual Machines & select the VM created in Azure portal.</li>
     <li>Copy the public ip address to paste in remote desktop client.</li>
     <li>Login with the credentials you created in step 2.</li>
-</div>
-</p>
-<br />
+    
+![Screenshot (84)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/b01a5495-5d99-441f-b672-ab3f4d481a19)
+
+  
+<h3>Step 4: Configure the domain controller:</h3>
 
 ![Screenshot (86)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/405d6538-58eb-48a1-a8ad-d52f0da58eae)
 ![Screenshot (87)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/fda28150-b786-4723-98db-8011e5f587d8)
