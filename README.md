@@ -114,43 +114,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <li>Login to Windows 10 (Remote Desktop) as the original local admin and join it to the domain (computer will restart)</li>
 <li>Open the System properties,go to rename this PC (advance), go to the "Computer Name" tab, and click on "Change".</li>
+<li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
 
 ![Screenshot (101)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/517887eb-db21-4be8-89ec-5b57ee37a0f3)
 
 <li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
 <li>Provide the credentials of an account with sufficient permissions to join the domain.</li>
 <li>Login to the windows server (Remote Desktop) and verify the VM shows up in Active Directory Users and Computers (ADUC) inside the "Computers" container on the root of the domain</li>
-    
+
 ![Screenshot (106)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/f20a111b-2f01-49a2-b2a3-707c7550647e)
 
-<p>
-<div>
-  <h3>Step 5: Join Windows 10 to your domain (mydomain.com)<h3/>
-  <ol>
-    <li>From the Azure Portal, set Windows10’s DNS settings to the windows server’s Private IP address</li>
-    <li>From the Azure Portal, restart windows 10 VM</li>
-    <li>Login to Windows 10 (Remote Desktop) as the original local admin and join it to the domain (computer will restart)</li>
-     <li>Open the System properties,go to rename this PC (advance), go to the "Computer Name" tab, and click on "Change".</li>
-    <li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
-    <li>Provide the credentials of an account with sufficient permissions to join the domain.</li>
-    <li>Login to the windows server (Remote Desktop) and verify the VM shows up in Active Directory Users and Computers (ADUC) inside the "Computers" container on the root of the domain</li>
-  </ol>
 
-</div>
-</p>
-<br />
 
+<h3>Step 6: Test the Active Directory environment:</h3>
+
+    <li>Log in to the domain-joined virtual machines using domain user accounts.</li>
+    
 ![Screenshot (107)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/879e32c1-3d2d-4a6d-92b7-d51f764af9af)
+
+<li>Verify that the domain users can authenticate successfully.</li>
+<li>Test Active Directory services like Group Policy, user authentication, and directory access.</li>
+
 ![Screenshot (108)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/60ef7ddd-5a11-4205-9356-7431213a734e)
 
-<p>
-<div>
-  <h3>Step 6: Test the Active Directory environment:</h3>
-  <ol>
-    <li>Log in to the domain-joined virtual machines using domain user accounts.</li>
-    <li>Verify that the domain users can authenticate successfully.</li>
-    <li>Test Active Directory services like Group Policy, user authentication, and directory access.</li>
-  </ol>
-</div>
-</p>
-<br />
+
