@@ -89,7 +89,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![Screenshot (88)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/3fc9b988-a4bc-4ad4-8333-163346c1019d)
 
 <li>After installation, promote the server to a domain controller.</li>
-<li>Specify the desired Active Directory domain name and set the domain controller options.</li>
 
 ![Screenshot (89)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/0aae2f2e-6dab-42b5-a33b-1367c47ccbaa)
 
@@ -103,7 +102,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 ![Screenshot (91)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/f88dac86-a493-4337-add0-0cd312eb1d15)
 
 
+<h3>Step 5: Join Windows 10 to your domain (mydomain.com)<h3/>
+
+<li>From the Azure Portal, set Windows10’s DNS settings to the windows server’s Private IP address</li>
 ![Screenshot (103)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/119964b1-15fe-4e61-b3ab-02353732b305)
+
+
 ![Screenshot (99)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/163ceda3-9a6f-40cf-8e42-7c1bc762803b)
 ![Screenshot (101)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/517887eb-db21-4be8-89ec-5b57ee37a0f3)
 ![Screenshot (106)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/f20a111b-2f01-49a2-b2a3-707c7550647e)
