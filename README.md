@@ -128,7 +128,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Step 6: Test the Active Directory environment:</h3>
 
-    <li>Log in to the domain-joined virtual machines using domain user accounts.</li>
+<li>Log in to the domain-joined virtual machines using domain user accounts.</li>
     
 ![Screenshot (107)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/879e32c1-3d2d-4a6d-92b7-d51f764af9af)
 
