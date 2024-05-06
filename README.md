@@ -28,18 +28,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
+<h3>Step 1: Set up the Azure environment:</h3>
+
+<li>Sign in to the Azure portal at <a href="https://portal.azure.com">portal.azure.com</a>.</li>
+<li>Create a new resource group for your virtual network and virtual machines.</li>
+    
 ![Screenshot (75)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/2144731a-b67a-46bd-aa41-21aef3e2d15d)
 
-<p>
-<div>
-  <h3>Step 1: Set up the Azure environment:</h3>
-  <ol>
-    <li>Sign in to the Azure portal at <a href="https://portal.azure.com">portal.azure.com</a>.</li>
-    <li>Create a new resource group for your virtual network and virtual machines.</li>
-  </ol>
-</div>
-</p>
-<br />
 
 <h3>Step 2: Create the Active Directory domain controller virtual machine:</h3>
 
