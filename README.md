@@ -105,11 +105,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Step 5: Join Windows 10 to your domain (mydomain.com)<h3/>
 
 <li>From the Azure Portal, set Windows10’s DNS settings to the windows server’s Private IP address</li>
+
 ![Screenshot (103)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/119964b1-15fe-4e61-b3ab-02353732b305)
 
+<li>From the Azure Portal, restart windows 10 VM</li>
 
 ![Screenshot (99)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/163ceda3-9a6f-40cf-8e42-7c1bc762803b)
+
+<li>Login to Windows 10 (Remote Desktop) as the original local admin and join it to the domain (computer will restart)</li>
+<li>Open the System properties,go to rename this PC (advance), go to the "Computer Name" tab, and click on "Change".</li>
+
 ![Screenshot (101)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/517887eb-db21-4be8-89ec-5b57ee37a0f3)
+
+<li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
+<li>Provide the credentials of an account with sufficient permissions to join the domain.</li>
+<li>Login to the windows server (Remote Desktop) and verify the VM shows up in Active Directory Users and Computers (ADUC) inside the "Computers" container on the root of the domain</li>
+    
 ![Screenshot (106)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/f20a111b-2f01-49a2-b2a3-707c7550647e)
 
 <p>
