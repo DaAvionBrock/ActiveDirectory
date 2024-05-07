@@ -42,7 +42,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![Screenshot (77)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/d6562cf9-527d-4f2f-ad50-1b40b9bd4792)
 
-<li>Search for "Windows Server" and choose the appropriate version.</li>
+<li>Search for "Windows Server" and select "windows server 22".</li>
 
 ![Screenshot (78)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/01eb921b-8ce7-474e-a1f6-6ea2af8e908c)
 
