@@ -103,6 +103,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
     <li>Go to windows nsg, then under settings select network interfaces </li>
     <li>under settings select DNS servers then change from inherit to custom</li>
 <li>Set DNS to Windows server Private ip address</li>
+
 ![Screenshot (103)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/119964b1-15fe-4e61-b3ab-02353732b305)
 
 <li>From the Azure Portal, restart windows 10 VM</li>
