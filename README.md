@@ -71,6 +71,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <li>Settings then select ip configurations</li>
 <li>In ip configurations scroll down till see ipconfig to select. Under private ip settings change to static</li>
+<li>Return back to DC-1 VM overview</li>
 
 ![Screenshot (14)](https://github.com/DaAvionBrock/images/blob/main/Screenshot%20(14).png)
 
