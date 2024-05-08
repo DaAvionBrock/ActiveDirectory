@@ -113,6 +113,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <li>Open the System properties,go to rename this PC (advance), go to the "Computer Name" tab, and click on "Change".</li>
 <li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
 
+
 ![Screenshot (101)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/517887eb-db21-4be8-89ec-5b57ee37a0f3)
 
 <li>Select "Domain" and enter the Active Directory domain name configured in step 4.</li>
