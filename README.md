@@ -64,7 +64,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![Screenshot (83)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/1249b639-600c-482e-9ef1-6570b9deefa9)
 
+<li>Under Networking select network settings </li>
+<li>Open netwwork interface</li>
+
 ![Screenshot (13)](https://github.com/DaAvionBrock/images/blob/main/Screenshot%20(13).png)
+
+<li>Settings then select ip configurations</li>
+<li>In ip configurations scroll down till see ipconfig to select. Under private ip settings change to static</li>
+
+![Screenshot (14)](https://github.com/DaAvionBrock/images/blob/main/Screenshot%20(14).png)
 
 <li>Copy the public ip address to paste in remote desktop client.</li>
     
