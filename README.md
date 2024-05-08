@@ -64,7 +64,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ![Screenshot (83)](https://github.com/DaAvionBrock/ActiveDirectory/assets/118222338/1249b639-600c-482e-9ef1-6570b9deefa9)
 
-C:\Users\sremm\Pictures\Screenshots\Screenshot (13).png
+
 
 <li>Copy the public ip address to paste in remote desktop client.</li>
     
